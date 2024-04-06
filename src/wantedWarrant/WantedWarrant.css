@@ -1,0 +1,52 @@
+.WantedWarrant-container{
+  position: absolute;
+  height:calc(100vh - 20rem);
+  width:100%;
+  top: 20rem;
+  background-color: #3D3847;
+
+}
+.WantedWarrant{
+  width:100%;
+  height:80%;
+}
+.wanted{
+  max-width: 100%;
+  height: auto;
+  max-height: 100%;
+  border-radius: 1.3337rem;
+}
+.passed-container{
+  width:100%;
+  height:50%;
+  position: absolute;
+  transform: rotate(15deg);
+  top:20%;
+}
+.d-none{
+  display: none;
+}
+.passed{
+  max-width: 100%;
+  height: auto;
+  max-height: 100%;
+  display: none;
+}
+.passedIn{
+  display: block;
+  animation: passIn 1s ease forwards;
+}
+@keyframes passIn{
+  0%{
+    transform: scale(1.2);
+  }
+  100%{
+    transform: scale(1);
+  }
+}
+
+.eventCompelete{
+  color:white;
+  font-size: 1.5rem;
+  font-weight: 600;
+}

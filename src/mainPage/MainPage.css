@@ -1,0 +1,23 @@
+.mainPageContainer{
+  height:100%;
+  position: relative;
+  background-color: #2F2D2C;
+}
+.completeHint{
+  height: 40%;
+  background-color: rgba(00, 00, 00, 85%);
+  display: flex;
+}
+.raccoon{
+  height: calc(100vh - 40% - 35%);
+}
+.cardContainer{
+  background-color: #9C8A76;
+  border-radius: 2rem;
+  height:40%;
+  /* margin-top:calc(100vh - 23rem - 14rem); */
+}
+.card-hint{
+  color:#FBE5C5;
+  font-size: 1.25rem;
+}

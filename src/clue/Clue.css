@@ -1,0 +1,21 @@
+.clue{
+  height:100%;
+  width: 100%;
+}
+
+.board{
+  height:80%;
+  background-color: #796F60;
+  border: 0.5rem solid #362914;
+  border-radius: 2.66667rem;
+}
+.board > div > .board-content{
+  color:white;
+  font-size: 1.75rem;
+  font-weight: 700;
+}
+.under-board{
+  background-color: #695747;
+  color:#695747;
+  opacity: 1;
+}

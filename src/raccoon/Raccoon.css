@@ -1,0 +1,40 @@
+.raccoon-container{
+  position:relative;
+  height: 100%;
+  width:100%;
+  background-color: #2F2D2C;
+  overflow: hidden;
+}
+.raccoon-container > .raccoon{
+  position:absolute;
+  top:-37.5vh;
+  left:0px;
+  height: 100%;
+  width:100%;
+}
+.raccoon > img{
+  width:100%;
+  height:auto;
+}
+.pipe{
+  position:absolute;
+  top:-38.5vh;
+  left:0px;
+  height: 100%;
+  width:100%;
+}
+.pipe > img{
+  width:100%;
+  height:auto;
+}
+.smoke{
+  position:absolute;
+  top:-38.5vh;
+  left:0px;
+  height: 100%;
+  width:100%;
+}
+.smoke > img{
+  width:100%;
+  height:auto;
+}

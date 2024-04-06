@@ -1,0 +1,13 @@
+.answerButton{
+  border-radius: 2.666667rem;
+  background-color: #A4845F !important;
+  color: #FBE5C5 !important;
+}
+.wrong{
+  border: 2px solid #351616 !important;
+  background-color: #772A19 !important;
+}
+.trueAns{
+  border: 2px solid #304829 !important;
+  background-color: #1C6724 !important;
+}
