@@ -37,6 +37,10 @@ function App() {
     let tmpArr = question;
     shuffle(tmpArr);
     setQuestion(tmpArr);
+    window.addEventListener('resize',()=>{
+      const app = document.querySelector("#App");
+      app.setAttribute("style","height:"+window.innerHeight);
+    })
   },[])
   useEffect(()=>{
     console.log(success);
