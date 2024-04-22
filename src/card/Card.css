@@ -1,5 +1,5 @@
 .cards{
-  height:60%;
+  height:55%;
   width:100%;
 }
 .card{
@@ -11,8 +11,8 @@
   
   border-radius: 1.3337rem;
   height:100%;
-  width:100%;
-  padding-right: 0.5rem !important;
+  width:30vw;
+  padding-right: 0.8rem !important;
   opacity: 0;
 }
 .cardimage{
@@ -29,6 +29,10 @@
 .down{
   transform: scale(1);
   transition: all 0.8s ease;
+}
+.resetPosition{
+  position:fixed;
+  top:0vh;
 }
 .cardFocus{
   width:100vw;
@@ -90,7 +94,7 @@
 .focus{
   position:absolute;
   width:65%;
-  height:45%;
+  height:40%;
   left:17.5%;
   top:17.5%;
   border-radius: 1.666667rem;
@@ -103,14 +107,23 @@
   top:70%;
   left:10%;
 }
+
+.focus-cardimage{
+  max-width: 100%;
+  height: auto;
+  max-height: 100%;
+  width:90%;
+  border-radius: 1.3337rem;
+  margin:0 auto;
+}
 .focus-text{
   color:#FBE5C5;
-  font-size: 1.5rem;
+  font-size: 18px;
   word-wrap: break-word;
 }
 .focus-next{
   position:absolute;
-  top:85%;
+  top:80%;
   left:30%;
   width:40%;
 }

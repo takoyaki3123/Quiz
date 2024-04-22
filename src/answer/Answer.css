@@ -11,3 +11,9 @@
   border: 2px solid #304829 !important;
   background-color: #1C6724 !important;
 }
+.btn-margin{
+  margin:0.7rem 0;
+}
+.answer-btn{
+  border:2px solid #A4845F !important;
+}

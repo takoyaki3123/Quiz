@@ -4,20 +4,30 @@
   background-color: #2F2D2C;
 }
 .completeHint{
+  position:relative;
+  z-index: 1;
   height: 40%;
   background-color: rgba(00, 00, 00, 85%);
   display: flex;
 }
 .raccoon{
   height: calc(100vh - 40% - 35%);
+  position:relative;
+  z-index: 2;
 }
 .cardContainer{
+  position:relative;
+  z-index: 3;
   background-color: #9C8A76;
   border-radius: 2rem;
-  height:40%;
+  height:45%;
   /* margin-top:calc(100vh - 23rem - 14rem); */
 }
 .card-hint{
   color:#FBE5C5;
   font-size: 1.25rem;
+}
+.mainPage-wanted{
+  height:calc(100vh - 40%);
+  position: relative;
 }

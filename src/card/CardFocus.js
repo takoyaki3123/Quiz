@@ -11,26 +11,29 @@ const CardFocus = (props) => {
     props.setNextOpen(true,props.selectId);
   }
   return(
-    <div className={`cardFocus ${props.animationClass}`}>
-      <div className="cardFocus-container">
-        <div className="backBtn">
-          <button className="btn btn-primary" onClick={()=>handleBack()}>O</button>
+    <div className="resetPosition">
+      <div className={`cardFocus ${props.animationClass}`}>
+        <div className="cardFocus-container">
+          <div className="backBtn">
+            <button className="btn btn-primary" onClick={()=>handleBack()}>O</button>
+          </div>
+          <div className={`focus px-4 d-flex align-items-center ${props.animationClass}`} style={{ backgroundImage:`url(${cardBackground})` ,backgroundSize:"cover"}}>
+            <img src={props.imgSrc} className="focus-cardimage  mt-3" alt="hint"/>
+          </div>
+          <div className="focus-question">
+            <span className="focus-text">在這神秘的工廠內 過去似乎隱藏著不為人知的祕密實驗...</span>
+          </div>
+          {!props.alreadyAnswer.includes(props.selectId)?
+          <div className="focus-next">
+            <button className="focus-btn" onClick={() => handleNext()}>確認</button>
+          </div>
+          :
+          <Fragment/>
+          }
         </div>
-        <div className={`focus px-4 d-flex align-items-center ${props.animationClass}`} style={{ backgroundImage:`url(${cardBackground})` ,backgroundSize:"cover"}}>
-          <img src={props.imgSrc} className="cardimage" alt="hint"/>
-        </div>
-        <div className="focus-question">
-          <span className="focus-text">在這神秘的工廠內 過去似乎隱藏著不為人知的祕密實驗...</span>
-        </div>
-        {!props.alreadyAnswer.includes(props.selectId)?
-        <div className="focus-next">
-          <button className="focus-btn" onClick={() => handleNext()}>確認</button>
-        </div>
-        :
-        <Fragment/>
-        }
       </div>
     </div>
+    
   )
 }
 CardFocus.propTypes = {

@@ -16,10 +16,14 @@ const Raccoon = (props) => {
       <div className="smoke">
         <img src={smoke}/>
       </div>
+      <div className="raccoon-text-container">
+        <span className="raccoon-text">{props.raccoonText}</span>
+
+      </div>
     </div>
   )
 }
 Raccoon.propTypes = {
-
+  raccoonText: PropTypes.string
 }
 export default Raccoon;

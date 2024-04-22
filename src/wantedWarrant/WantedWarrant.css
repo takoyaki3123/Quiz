@@ -1,27 +1,26 @@
 .WantedWarrant-container{
   position: absolute;
-  height:calc(100vh - 20rem);
+  height:calc(100vh - 40vh);
   width:100%;
-  top: 20rem;
-  background-color: #3D3847;
+  background-color: #342E40;
 
 }
 .WantedWarrant{
   width:100%;
-  height:80%;
+  height:70%;
 }
 .wanted{
   max-width: 100%;
-  height: auto;
+  height: 90%;
   max-height: 100%;
   border-radius: 1.3337rem;
 }
 .passed-container{
   width:100%;
-  height:50%;
+  height:45%;
   position: absolute;
   transform: rotate(15deg);
-  top:20%;
+  top:15%;
 }
 .d-none{
   display: none;
@@ -49,4 +48,18 @@
   color:white;
   font-size: 1.5rem;
   font-weight: 600;
+}
+.compeleteIn{
+  animation: compeleteDisplayAnimation 0.5s ease forwards;
+}
+
+@keyframes compeleteDisplayAnimation{
+  0%{
+    margin-top: 1rem;
+    opacity: 0;
+  }
+  100%{
+    margin-top: 0rem;
+    opacity: 1;
+  }
 }

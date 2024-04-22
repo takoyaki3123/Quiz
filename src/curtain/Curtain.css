@@ -5,10 +5,10 @@
 }
 .rope{
   position:absolute;
-  height:100vh;
+  height:90vh;
   width:30vw;
   top:-10vh;
-  left: 2rem;
+  left: 0.5rem;
 }
 .titleImage{
   position:absolute;

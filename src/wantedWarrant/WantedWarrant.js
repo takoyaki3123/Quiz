@@ -11,13 +11,13 @@ const WantedWarrant = (props) => {
   }
   return(
     <div className={`WantedWarrant-container ${props.isShow?"d-block":"d-none"}`}>
-      <div className="WantedWarrant d-flex justify-content-center mt-2">
+      <div className="WantedWarrant d-flex justify-content-center mt-4">
         <img src={wanted} className="wanted" onClick={()=>getPass()}/>
       </div>
       <div className={`passed-container d-flex justify-content-center ${pass?"":"d-none"}`}>
         <img src={passed} className={`passed ${pass?"passedIn":""}`}/>
       </div>
-      <div className="d-flex justify-content-center mt-3">
+      <div className={`d-flex justify-content-center ${pass?"compeleteIn":"d-none"}`}>
         <span className="eventCompelete">完成活動 請至櫃台領取抽獎券</span>
       </div>
     </div>

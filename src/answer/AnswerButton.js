@@ -9,7 +9,7 @@ const AnswerButton = (props) => {
   }
   return(
   <div className='px-2'>
-    <button className={`w-100 btn my-2 py-2 ${props.class} ${props.clickClass}`} onClick={()=>{handleAnswer(props.answerID)}}>{props.text}</button>
+    <button className={`w-100 btn btn-margin py-2 answer-btn ${props.class} ${props.clickClass}`} onClick={()=>{handleAnswer(props.answerID)}}>{props.text}</button>
   </div>
   )
 }

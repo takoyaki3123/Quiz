@@ -3,15 +3,14 @@ import 'bootstrap/dist/js/bootstrap.bundle';
 import './App.css';
 import Question from './question/Question';
 import MainPage from './mainPage/MainPage';
-import girl from './images/girl.jpg';
-import raccoon from './images/raccoon.png';
 import { useEffect, useState } from 'react';
 import Curtain from './curtain/Curtain';
+import { Questions } from './allQuestion';
 function App() {
   const [curtainUp,setCurtainUp] = useState(false);
   const [questionOpen,setQuestionOpen] = useState(false);
   const [mainPageOpen,setMainPageOpen] = useState(true);
-  const [question, setQuestion] = useState([{question:"1",answer:"1",img:girl},{question:"2",answer:"2",img:raccoon},{question:"3",answer:"3",img:girl}]);
+  const [question, setQuestion] = useState(Questions);
   const [qID, setQID] = useState(0);//現在問題
   const [success,setSuccess] = useState(0); //正確題數
   const [alreadyAnswer, setAlreadyAnswer] = useState([]);
