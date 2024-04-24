@@ -6,12 +6,12 @@
 .completeHint{
   position:relative;
   z-index: 1;
-  height: 40%;
+  height: 35%;
   background-color: rgba(00, 00, 00, 85%);
   display: flex;
 }
 .raccoon{
-  height: calc(100vh - 40% - 40%);
+  height: calc(100vh - 35% - 45%);
   position:relative;
   z-index: 2;
 }
