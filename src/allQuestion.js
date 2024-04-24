@@ -39,16 +39,14 @@ import Q19pic1 from './images/Q19Img1.jpg';
 import Q19pic2 from './images/Q19Img2.jpg';
 import Q20pic1 from './images/Q20Img1.jpg';
 import Q20pic2 from './images/Q20Img2.jpg';
-// import Q21pic1 from './images/Q21Img1.png';
-// import Q21pic2 from './images/Q21Img2.png';
+import Q21pic1 from './images/Q21Img1.png';
+import Q21pic2 from './images/Q21Img2.png';
 import Q22pic1 from './images/Q22Img1.png';
 import Q22pic2 from './images/Q22Img2.png';
 import Q23pic1 from './images/Q23Img1.png';
 import Q23pic2 from './images/Q23Img2.png';
 import Q24pic1 from './images/Q24Img1.png';
 import Q24pic2 from './images/Q24Img2.png';
-// import Q25pic1 from './images/Q25Img1.png';
-// import Q25pic2 from './images/Q25Img2.png';
 export const Questions = [
     {desc:"對自己身材感到自卑的女孩決定奮發減肥，但卻迷失在人們的眼光與自己的心魔中，逐漸走火入魔…",question:"請問下列何者為主角身上的代表物？",answer:"3",option:[{answer:"紅色腰帶"},{answer:"紅色髮夾"},{answer:"紅色手環"},{answer:"紅色緞帶"}],img:Q1pic1,qImg:Q1pic2},
     {desc:"小女孩",question:"圖中小女孩的神情是?",answer:"1",option:[{answer:"開心"},{answer:"憤怒"},{answer:"傷心"},{answer:"興奮"}],img:Q2pic1,qImg:Q2pic2},
@@ -73,7 +71,7 @@ export const Questions = [
     {desc:"那不可名狀的恐怖，將在深淵中甦醒，湧現出人類無法理解的力量",question:"遊戲中玩家操控的主角是使用甚麼武器?",answer:"2",option:[{answer:"鐮刀"},{answer:"火槍"},{answer:"劍"},{answer:"矛"}],img:Q18pic1,qImg:Q18pic2},
     {desc:"科技發展中爆發戰爭，當人類與人工智慧經歷傷痛後 最終的解決之道是共存。",question:"請問動畫《Last Piece of Peace 》中，帶領老人找到機器人的生物是甚麼?",answer:"2",option:[{answer:"橘色衣魚"},{answer:"紅色蜻蜓"},{answer:"藍色蝴蝶"},{answer:"黑色蜘蛛"}],img:Q19pic1,qImg:Q19pic2},
     {desc:"當夜晚降臨，星星點點的天空映照下，一個騎士在營火旁坐著...",question:"中世紀的騎士通常會進行哪種活動來提高技能和聲譽？",answer:"3",option:[{answer:"魔術表演"},{answer:"賽馬"},{answer:"閱讀"},{answer:"武術比賽"}],img:Q20pic1,qImg:Q20pic2},
-    // {desc:"在光的照耀下，是誰的影子演出了夢想",question:"請問主角在雜物間看到了什麼？",answer:"3",option:[{answer:"偶像的海報"},{answer:"展覽的海報"},{answer:"徵召清潔人員的海報"},{answer:"舞蹈表演的海報"}],img:Q21pic1,qImg:Q21pic2},
+    {desc:"在光的照耀下，是誰的影子演出了夢想",question:"請問主角在雜物間看到了什麼？",answer:"3",option:[{answer:"偶像的海報"},{answer:"展覽的海報"},{answer:"徵召清潔人員的海報"},{answer:"舞蹈表演的海報"}],img:Q21pic1,qImg:Q21pic2},
     {desc:"幸運降臨！偵探羅伯特將如何利用神的恩賜—時光相機拯救一切呢？",question:"請問遊戲中神送給玩家的道具是什麼?",answer:"1",option:[{answer:"起司"},{answer:"相機"},{answer:"襪子"},{answer:"熱水壺"}],img:Q22pic1,qImg:Q22pic2},
     {desc:"⼀個離鄉背井的攝影師， 在都市中找尋滿意的景⾊。",question:"主角在哪一個車站搭上列車?",answer:"3",option:[{answer:"宜蘭"},{answer:"台中"},{answer:"台南"},{answer:"台北"}],img:Q23pic1,qImg:Q23pic2},
     {desc:"It's Rainbow Time!",question:"動畫<YO BATTLE!>中的觀眾是以什麼為參考演變而來？",answer:"0",option:[{answer:"佛手柑"},{answer:"地瓜"},{answer:"馬鈴薯"},{answer:"章魚小香腸"}],img:Q24pic1,qImg:Q24pic2},
