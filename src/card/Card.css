@@ -1,5 +1,5 @@
 .cards{
-  height:55%;
+  height:42%;
   width:100%;
 }
 .card{
@@ -18,7 +18,7 @@
 .cardimage{
   max-width: 100%;
   height: auto;
-  max-height: 100%;
+  max-height: 80%;
   border-radius: 1.3337rem;
   margin:0 auto;
 }
@@ -32,14 +32,14 @@
 }
 .resetPosition{
   position:fixed;
-  top:0vh;
+  top:0svh;
 }
 .cardFocus{
   width:100vw;
-  height:100vh;
+  height:100svh;
   background-color: rgba(0, 0, 0, 0.65);
   position: absolute;
-  top:0vh;
+  top:0svh;
 }
 .cardFocus.focusOut{
   animation: cardFocusOut 0s ease 1s forwards;
@@ -49,21 +49,21 @@
 }
 @keyframes cardFocusIn{
   0%{
-    top:100vh;
+    top:100svh;
     opacity: 0;
   }
   100%{
-    top:0vh;
+    top:0svh;
     opacity: 1;
   }
 }
 @keyframes cardFocusOut{
   0%{
-    top:0vh;
+    top:0svh;
     opacity: 1;
   }
   100%{
-    top:100vh;
+    top:100svh;
     opacity: 0;
   }
 }

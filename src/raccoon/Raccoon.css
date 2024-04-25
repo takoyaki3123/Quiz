@@ -7,7 +7,7 @@
 }
 .raccoon-container > .raccoon{
   position:absolute;
-  top:-63.5vh;
+  top:-63.5svh;
   left:-13vw;
   height: 140%;
   width:140%;
@@ -18,7 +18,7 @@
 }
 .pipe{
   position:absolute;
-  top:-44.5vh;
+  top:-44.5svh;
   left:0px;
   height: 100%;
   width:100%;
@@ -29,7 +29,7 @@
 }
 .smoke{
   position:absolute;
-  top:-44.5vh;
+  top:-44.5svh;
   left:0px;
   height: 100%;
   width:100%;
