@@ -7,13 +7,13 @@
 }
 .raccoon-container > .raccoon{
   position:absolute;
-  top:-63.5svh;
-  left:-13vw;
-  height: 140%;
-  width:140%;
+  top:-1svh;
+  left:-4svw;
+  height: 100%;
+  width:100%;
 }
 .raccoon > img{
-  width:100%;
+  width:120%;
   height:auto;
 }
 .pipe{
