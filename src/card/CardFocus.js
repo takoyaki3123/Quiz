@@ -15,7 +15,7 @@ const CardFocus = (props) => {
       <div className={`cardFocus ${props.animationClass}`}>
         <div className="cardFocus-container">
           <div className="backBtn">
-            <button className="btn btn-primary" onClick={()=>handleBack()}>O</button>
+            <button className="btn btn-primary" onClick={()=>handleBack()}>X</button>
           </div>
           <div className={`focus px-4 d-flex align-items-center ${props.animationClass}`} style={{ backgroundImage:`url(${cardBackground})` ,backgroundSize:"cover"}}>
             <img src={props.imgSrc} className="focus-cardimage" alt="hint"/>
