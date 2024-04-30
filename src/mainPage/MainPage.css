@@ -11,7 +11,7 @@
   display: flex;
 }
 .raccoon{
-  height: calc(100vh - 40% - 40%);
+  height: calc(100vh - 40% - 45%);
   position:relative;
   z-index: 2;
 }
@@ -20,7 +20,7 @@
   z-index: 3;
   background-color: #9C8A76;
   border-radius: 2rem;
-  height:40%;
+  height:50%;
   /* margin-top:calc(100vh - 23rem - 14rem); */
 }
 .card-hint{
