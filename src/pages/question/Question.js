@@ -1,17 +1,15 @@
 import React, { useEffect } from "react";
 import PropTypes from 'prop-types';
 import './Question.css';
-import Answer from "../answer/Answer";
-import sideRaccoon from '../images/sideRaccoon.png';
-import bottomRaccoon from '../images/bottomRaccoon.png';
-import footprint from '../images/footprint.png';
-import magnifier from '../images/magnifier.png';
+import Answer from "../../component/answer/Answer";
+import sideRaccoon from '../../images/sideRaccoon.png';
+import bottomRaccoon from '../../images/bottomRaccoon.png';
+import footprint from '../../images/footprint.png';
+import magnifier from '../../images/magnifier.png';
 
 // p5
 const Question = (props) => {
   const handleAnswer = (answer) => {
-    console.log("qid answer",props.question[props.qID].answer);
-    console.log("answer",answer);
     if(answer == props.question[props.qID].answer){
       props.answerTrue();
       props.setAlreadyAnswer([...props.alreadyAnswer,props.qID]);
@@ -64,13 +62,17 @@ const Question = (props) => {
   )
 }
 Question.propTypes = {
+  // func
   answerTrue: PropTypes.func,
   setQuestionOpen: PropTypes.func,
   setMainPageOpen: PropTypes.func,
   setAlreadyAnswer: PropTypes.func,
+  // bool
   questionOpen: PropTypes.bool,
+  // array
   alreadyAnswer: PropTypes.array,
   question: PropTypes.array,
+  // number
   qID: PropTypes.number,
 }
 export default Question;

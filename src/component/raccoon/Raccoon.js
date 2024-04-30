@@ -1,8 +1,8 @@
 import React from "react";
 import PropTypes from 'prop-types';
-import raccoon from '../images/raccoon.png';
-import pipe from '../images/pipe.png';
-import smoke from '../images/smoke.png';
+import raccoon from '../../images/raccoon.png';
+import pipe from '../../images/pipe.png';
+import smoke from '../../images/smoke.png';
 import './Raccoon.css';
 const Raccoon = (props) => {
   return(

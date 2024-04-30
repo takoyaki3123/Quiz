@@ -1,7 +1,7 @@
 import React, { Fragment } from "react";
 import PropTypes from 'prop-types';
 import './Card.css';
-import cardBackground from '../images/cardBackground.png';
+import cardBackground from '../../images/cardBackground.png';
 const CardFocus = (props) => {
   const handleBack = () => {
     props.setAnimationClass("focusOut");
@@ -37,11 +37,14 @@ const CardFocus = (props) => {
   )
 }
 CardFocus.propTypes = {
+  // string
   imgSrc: PropTypes.string,
   animationClass: PropTypes.string,
+  // number
   selectId:PropTypes.number,
+  // array
   alreadyAnswer: PropTypes.array,
-  //function
+  // function
   setAnimationClass: PropTypes.func,
   setNextOpen: PropTypes.func,
 }

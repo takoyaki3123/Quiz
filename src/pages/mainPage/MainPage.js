@@ -1,10 +1,10 @@
 import React, { useEffect, useState } from "react";
 import PropTypes from 'prop-types';
 import './MainPage.css';
-import Clue from "../clue/Clue";
-import Raccoon from "../raccoon/Raccoon";
-import Card from '../card/Card';
-import WantedWarrant from "../wantedWarrant/WantedWarrant";
+import Clue from "../../component/clue/Clue";
+import Raccoon from "../../component/raccoon/Raccoon";
+import Card from '../../component/card/Card';
+import WantedWarrant from "../../component/wantedWarrant/WantedWarrant";
 // p3
 const MainPage = (props) => {
   const [raccoonText,setRaccoonText] = useState("");
@@ -43,11 +43,15 @@ const MainPage = (props) => {
   );
 }
 MainPage.propTypes = {
+  // bool
   curtainUp: PropTypes.bool,
+  // func
   setOpen: PropTypes.func,
   setNextOpen: PropTypes.func,
+  // array
   question:PropTypes.array,
   alreadyAnswer: PropTypes.array,
+  // number
   success:PropTypes.number,
 }
 export default MainPage;

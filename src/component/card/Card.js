@@ -3,7 +3,7 @@ import PropTypes from "prop-types";
 import './Card.css';
 
 import CardFocus from "./CardFocus";
-import cardBackground from '../images/cardBackground.png';
+import cardBackground from '../../images/cardBackground.png';
 // p3下面的卡片
 const Card = (props) => {
   const [animationClass,setAnimation] = useState("focusOut");

@@ -34,6 +34,7 @@ const Answer = (props) => {
   )
 }
 Answer.propTypes = {
+  // array
   option: PropTypes.array,
   // string 
   class: PropTypes.string,

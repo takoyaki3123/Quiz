@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import './Curtain.css';
-import curtainImg from '../images/curtainImg.png';
-import rope from '../images/rope.png';
+import curtainImg from '../../images/curtainImg.png';
+import rope from '../../images/rope.png';
 import PropTypes from 'prop-types';
 // p2的畫面
 const Curtain = (props) => {

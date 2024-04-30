@@ -1,10 +1,10 @@
 import React, { useEffect, useState } from "react";
 import PropTypes from 'prop-types';
 import './Clue.css'
-import Clue0 from '../images/clue0.png';
-import Clue1 from '../images/clue1.png';
-import Clue2 from '../images/clue2.png';
-import Clue3 from '../images/clue3.png';
+import Clue0 from '../../images/clue0.png';
+import Clue1 from '../../images/clue1.png';
+import Clue2 from '../../images/clue2.png';
+import Clue3 from '../../images/clue3.png';
 
 // p3上面的圖
 const Clue = (props) => {

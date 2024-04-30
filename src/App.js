@@ -1,10 +1,10 @@
 import 'bootstrap/dist/css/bootstrap.min.css';
 import 'bootstrap/dist/js/bootstrap.bundle';
 import './App.css';
-import Question from './question/Question';
-import MainPage from './mainPage/MainPage';
+import Question from './pages/question/Question';
+import MainPage from './pages/mainPage/MainPage';
 import { useEffect, useState } from 'react';
-import Curtain from './curtain/Curtain';
+import Curtain from './pages/curtain/Curtain';
 import { Questions } from './allQuestion';
 function App() {
   const [curtainUp,setCurtainUp] = useState(false);
@@ -15,7 +15,6 @@ function App() {
   const [success,setSuccess] = useState(0); //正確題數
   const [alreadyAnswer, setAlreadyAnswer] = useState([]);
   const openQuestion = (open,qID) => {
-    console.log("openQuestion:",qID);
     setQuestionOpen(open);
     setQID(qID);
     setMainPageOpen(!open);
@@ -38,9 +37,6 @@ function App() {
     shuffle(tmpArr);
     setQuestion(tmpArr);
   },[])
-  useEffect(()=>{
-    console.log(success);
-  },[success])
   return (
     <div className="App">
       <Curtain pull={pulled}/>

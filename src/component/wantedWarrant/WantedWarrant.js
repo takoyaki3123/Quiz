@@ -1,13 +1,12 @@
 import React, { useState } from "react";
 import PropTypes from 'prop-types';
 import './WantedWarrant.css';
-import wanted from '../images/WantedWarrant.png';
-import passed from '../images/passed.png';
+import wanted from '../../images/WantedWarrant.png';
+import passed from '../../images/passed.png';
 const WantedWarrant = (props) => {
   const [pass,setPass] = useState(false);
   const getPass = () => {
     setPass(true);
-    console.log("pass");
   }
   return(
     <div className={`WantedWarrant-container ${props.isShow?"d-block":"d-none"}`}>
