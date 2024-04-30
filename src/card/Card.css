@@ -98,6 +98,7 @@
   left:17.5%;
   top:17.5%;
   padding-top:2rem !important;
+  padding-bottom: 1rem !important;
   border-radius: 1.666667rem;
   transform: rotate(15deg);
   padding-right: 1rem !important;
@@ -110,10 +111,10 @@
 }
 
 .focus-cardimage{
-  max-width: 100%;
-  height: auto;
+  max-width: 90%;
   max-height: 100%;
-  width:90%;
+  height: auto;
+  min-width:60%;
   border-radius: 1.3337rem;
   margin:0 auto;
 }

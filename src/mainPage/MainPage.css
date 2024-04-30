@@ -11,7 +11,7 @@
   display: flex;
 }
 .raccoon{
-  height: calc(100vh - 40% - 45%);
+  height: calc(100svh - 40% - 45%);
   position:relative;
   z-index: 2;
 }
