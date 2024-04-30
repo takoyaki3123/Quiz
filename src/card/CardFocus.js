@@ -18,7 +18,7 @@ const CardFocus = (props) => {
             <button className="btn btn-primary" onClick={()=>handleBack()}>O</button>
           </div>
           <div className={`focus px-4 d-flex align-items-center ${props.animationClass}`} style={{ backgroundImage:`url(${cardBackground})` ,backgroundSize:"cover"}}>
-            <img src={props.imgSrc} className="focus-cardimage  mt-3" alt="hint"/>
+            <img src={props.imgSrc} className="focus-cardimage" alt="hint"/>
           </div>
           <div className="focus-question">
             <span className="focus-text">在這神秘的工廠內 過去似乎隱藏著不為人知的祕密實驗...</span>

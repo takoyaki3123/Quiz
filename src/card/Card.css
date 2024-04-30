@@ -97,6 +97,7 @@
   height:40%;
   left:17.5%;
   top:17.5%;
+  padding-top:2rem !important;
   border-radius: 1.666667rem;
   transform: rotate(15deg);
   padding-right: 1rem !important;
