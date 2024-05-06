@@ -44,6 +44,8 @@
   font-size: 1rem;
   font-weight: 600;
   white-space: break-word;
+  width:fit-content;
+  height: fit-content;
 }
 .raccoon-text-container{
   
@@ -51,5 +53,9 @@
   top:-1rem;
   right:-57.5%;
   width:6.5rem;
-  height:6rem;
+  height:5rem;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-content: center;
 }
