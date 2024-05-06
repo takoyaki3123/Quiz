@@ -15,7 +15,7 @@ const Curtain = (props) => {
     <div className={`curtain-container ${pulled?"pull":""}`}>
       <div className={`curtain`} style={{ backgroundImage:`url(${curtainImg})`,backgroundSize:"100% 101%" }}>
         <div className={`rope ${pulled?"pull":""}`} onClick={()=>pullRope()}  style={{ backgroundImage:`url(${rope})`,backgroundSize:"cover" }}></div>
-        <div className='title'></div>
+        <div className='title'>請點擊繩子</div>
       </div>
     </div>
   )

@@ -13,6 +13,17 @@
 .titleImage{
   position:absolute;
 }
+.title{
+  color: white;
+  font-size: 1.4rem;
+  position:absolute;
+  bottom: 5rem;
+  width:100%;
+  display: flex;
+  justify-content: center;
+
+
+}
 .curtain-container.pull{
   animation: curtainUp 1s ease 0.5s forwards;
 }

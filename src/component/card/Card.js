@@ -8,6 +8,7 @@ import cardBackground from '../../images/cardBackground.png';
 const Card = (props) => {
   const [animationClass,setAnimation] = useState("focusOut");
   const [selectCard, setSelectCard] = useState("");
+  const [desc, setDesc] = useState("");
   const [selectId,setSelectId] = useState(-1);
   const mouseDown = (e) => {
     e.target.className = "cardimage mt-2 pressing";
@@ -15,30 +16,38 @@ const Card = (props) => {
   const mouseUp = (e) => {
     e.target.className = "cardimage mt-2 down";
   }
-  const cardClick = (img,id) => {
+  const cardClick = (img, id, text) => {
     setAnimation(animationClass==="focusOut"?"focusIn":"focusOut");
     setSelectCard(img);
     setSelectId(id);
+    setDesc(text);
     props.raccoonTextChoose();
   }
   return(
     <div className="cards flex-row pt-3  d-flex ">
       <div className={` ${props.success===0?"col-4":props.success===1?"col-6 px-4":"col-12 px-5"} card pb-1 ${props.alreadyAnswer.includes(0)?"d-none":""}`}>
         <div className={`  ${props.success===0?"ms-1":""} card-content px-3 d-flex align-items-center mx-auto ${props.curtainUp?"cardDisplay":""}`} style={{ backgroundImage:`url(${cardBackground})` ,backgroundSize:"cover"}}>
-          <img src={props.question[0].img} className="cardimage mt-2" alt="hint" onClick={() => {cardClick(props.question[0].img,0)}} onTouchStart={(e) => mouseDown(e)} onTouchCancel={(e) => mouseUp(e)} onTouchEnd={(e) => mouseUp(e)} onMouseUp={(e) => mouseUp(e)}/>
+          <img src={props.question[0].img} className="cardimage mt-2" alt="hint" onClick={() => {cardClick(props.question[0].img,0,props.question[0].desc)}} onTouchStart={(e) => mouseDown(e)} onTouchCancel={(e) => mouseUp(e)} onTouchEnd={(e) => mouseUp(e)} onMouseUp={(e) => mouseUp(e)}/>
         </div>
       </div>
       <div className={` ${props.success===0?"col-4":props.success===1?"col-6 px-4":"col-12 px-5"} card pb-1 ${props.alreadyAnswer.includes(1)?"d-none":""}`}>
         <div className={`card-content px-3 d-flex align-items-center mx-auto ${props.curtainUp?"cardDisplay":""}`} style={{ backgroundImage:`url(${cardBackground})` ,backgroundSize:"cover"}}>
-          <img src={props.question[1].img} className="cardimage mt-2" alt="hint" onClick={() => {cardClick(props.question[1].img,1)}} onTouchStart={(e) => mouseDown(e)} onTouchCancel={(e) => mouseUp(e)} onTouchEnd={(e) => mouseUp(e)} onMouseUp={(e) => mouseUp(e)}/>
+          <img src={props.question[1].img} className="cardimage mt-2" alt="hint" onClick={() => {cardClick(props.question[1].img,1,props.question[1].desc)}} onTouchStart={(e) => mouseDown(e)} onTouchCancel={(e) => mouseUp(e)} onTouchEnd={(e) => mouseUp(e)} onMouseUp={(e) => mouseUp(e)}/>
         </div>
       </div>
       <div className={`${props.success===0?"col-4":props.success===1?"col-6 px-4":"col-12 px-5"} card pb-1 ${props.alreadyAnswer.includes(2)?"d-none":""}`}>
         <div className={`card-content px-3 d-flex align-items-center mx-auto ${props.curtainUp?"cardDisplay":""}`} style={{ backgroundImage:`url(${cardBackground})` ,backgroundSize:"cover"}}>
-          <img src={props.question[2].img} className="cardimage mt-2" alt="hint" onClick={() => {cardClick(props.question[2].img,2)}} onTouchStart={(e) => mouseDown(e)} onTouchCancel={(e) => mouseUp(e)} onTouchEnd={(e) => mouseUp(e)} onMouseUp={(e) => mouseUp(e)}/>
+          <img src={props.question[2].img} className="cardimage mt-2" alt="hint" onClick={() => {cardClick(props.question[2].img,2,props.question[2].desc)}} onTouchStart={(e) => mouseDown(e)} onTouchCancel={(e) => mouseUp(e)} onTouchEnd={(e) => mouseUp(e)} onMouseUp={(e) => mouseUp(e)}/>
         </div>
       </div>
-      <CardFocus alreadyAnswer={props.alreadyAnswer} selectId={selectId} imgSrc={selectCard} setNextOpen={props.setNextOpen} animationClass={animationClass} setAnimationClass={setAnimation}/>
+      <CardFocus 
+        alreadyAnswer={props.alreadyAnswer} 
+        text={desc} 
+        selectId={selectId} 
+        imgSrc={selectCard} 
+        setNextOpen={props.setNextOpen} 
+        animationClass={animationClass} 
+        setAnimationClass={setAnimation}/>
 
     </div>
   )

@@ -21,7 +21,7 @@ const CardFocus = (props) => {
             <img src={props.imgSrc} className="focus-cardimage" alt="hint"/>
           </div>
           <div className="focus-question">
-            <span className="focus-text">在這神秘的工廠內 過去似乎隱藏著不為人知的祕密實驗...</span>
+            <span className="focus-text">{props.text}</span>
           </div>
           {!props.alreadyAnswer.includes(props.selectId)?
           <div className="focus-next">
@@ -40,6 +40,7 @@ CardFocus.propTypes = {
   // string
   imgSrc: PropTypes.string,
   animationClass: PropTypes.string,
+  text: PropTypes.string,
   // number
   selectId:PropTypes.number,
   // array
