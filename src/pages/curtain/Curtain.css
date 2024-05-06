@@ -5,9 +5,9 @@
 }
 .rope{
   position:absolute;
-  height:120svh;
+  height:1000px;
   width:150px;
-  top:-40svh;
+  top:-45svh;
   left: 0.5rem;
 }
 .titleImage{
@@ -32,13 +32,13 @@
 }
 @keyframes ropePull{
   0%{
-    top:-40svh;
+    top:-45svh;
   }
   50%{
-    top:-20svh;
+    top:-25svh;
   }
   100%{
-    top:-40svh;
+    top:-45svh;
   }
 }
 @keyframes curtainUp{
