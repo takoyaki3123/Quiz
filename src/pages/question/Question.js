@@ -1,4 +1,4 @@
-import React, { useEffect } from "react";
+import React, { useEffect, useState } from "react";
 import PropTypes from 'prop-types';
 import './Question.css';
 import Answer from "../../component/answer/Answer";
@@ -9,12 +9,16 @@ import magnifier from '../../images/magnifier.png';
 
 // p5
 const Question = (props) => {
+  const [isAnswer, setIsAnswer] = useState(false);
   const handleAnswer = (answer) => {
     if(answer == props.question[props.qID].answer){
-      props.answerTrue();
-      props.setAlreadyAnswer([...props.alreadyAnswer,props.qID]);
-      setTimeout(closeQuestion,1000);
-      // props.setQuestionOpen(false);
+      if(!isAnswer){
+        setIsAnswer(true);
+        props.answerTrue();
+        props.setAlreadyAnswer([...props.alreadyAnswer,props.qID]);
+        setTimeout(closeQuestion,1000);
+        // props.setQuestionOpen(false);
+      }
       return true;
     }
     return false;
